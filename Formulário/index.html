@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial VisualG</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header, footer{
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        nav{
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a{
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+
+        section{
+            padding: 20px;
+        }
+
+        article{
+            background-color: #f4f4f4;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        aside{
+            background-color: #ddd;
+            padding: 10px;
+            margin-top: 10px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+	
+	p{
+	    padding-left: 2%;
+	}
+	
+	li{
+	    margin: 1%;
+	}
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>MINI-TUTORIAL</h1>
+    <p>Introdução ao VisualG</p>
+</header>
+
+<nav>
+    <a href="#introducao" target="_self">Introdução</a>
+    <a href="#estrutura" target="_self">Estrutura</a>
+    <a href="#exemplos" target="_self">Exemplos</a>
+    <a href="#avaliacao" target="_self">Avaliação</a>
+</nav>
+
+<section id="introducao">
+    <h2>1. O que é VisualG?</h2>
+    <p>O VisualG é uma ferramenta utilizada para o aprendizado de lógica de programação.</p>
+    <p>Ele permite a construção de algoritmos utilizando pseudocódigo.</p>
+    <p>Mesmo que limitado, ainda se pode elaborar programas incríveis se souber o que está fazendo.</p>
+    <p>Portanto, com o básico da lógica, dedicação e criatividade, tudo (ou quase) é possível.</p>
+    <h3>Principais Objetivos</h3>
+    <ul>
+        <li>Aprender lógica de programação</li>
+        <li>Desenvolver algoritmos</li>
+        <li>Compreender estruturas básicas</li>
+    </ul>
+</section>
+
+<section id="estrutura">
+    <h2>2. Estrutura Básica de um Algoritmo</h2>
+
+    <article>
+        <h3>Início e Fim</h3>
+        <p>Todo algoritmo possui início e fim bem definidos.</p>
+	<p>Pode haver sub-algoritmos dentro de outro algoritmo, possuindo também início e fim.</p>
+    </article>
+
+    <article>
+        <h3>Declaração de Variáveis</h3>
+        <p>As variáveis são utilizadas para armazenar valores.</p>
+	<ul>
+	<li>INTEIRO - Para valores positivos e negativos sem vírgulas</li>
+	<li>REAL - Para valores fracionais (com vírgula), positivos e negativos</li>
+	<li>CARACTER - Para guardar texto, este não podendo efetuar operações matemáticas mesmo se número</li>
+	<li>LOGICO - Para apenas dois valores, positivo ou negativo</li>
+	</ul>
+    </article>
+
+    <aside>
+        <h4>Observação</h4>
+        <p>É importante manter a organização e identação do código.</p>
+    </aside>
+</section>
+
+<section id="exemplos">
+    <h2>3. Exemplos</h2>
+
+    <h3>Funções básicas:</h3>
+    <table>
+        <tr>
+            <th>Comandos</th>
+            <th>Função</th>
+        </tr>
+        <tr>
+            <td>Algoritmo</td>
+            <td>Define o nome do algoritmo</td>
+        </tr>
+        <tr>
+            <td>Var</td>
+            <td>Declara variáveis</td>
+        </tr>
+        <tr>
+            <td>Inicio</td>
+            <td>Marca o início da execução</td>
+        </tr>
+        <tr>
+            <td>Fimalgoritmo</td>
+            <td>Marca o fim da execução</td>
+        </tr>
+        <tr>
+            <td>Escreva</td>
+            <td>Demarca onde e o que será imprimido na tela</td>
+        </tr>
+        <tr>
+            <td>Escreval</td>
+            <td>Função escreva somada a um espaçamento de pular linha</td>
+        </tr>
+        <tr>
+            <td>Leia</td>
+            <td>Guarda o valor digitado pelo usuário na variável selecionada</td>
+        </tr>
+    </table>
+    <h3>Operadores Lógicos (usados em estruturas):</h3>
+    <table>
+        <tr>
+            <th>Operador</th>
+            <th>Função</th>
+        </tr>
+        <tr>
+            <td>></td>
+            <td>Maior que</td>
+        </tr>
+        <tr>
+            <td><</td>
+            <td>Menor que</td>
+        </tr>
+        <tr>
+            <td>>=</td>
+            <td>Maior ou igual</td>
+        </tr>
+        <tr>
+            <td><=</td>
+            <td>Menor ou igual</td>
+        </tr>
+        <tr>
+            <td>=</td>
+            <td>Igual</td>
+        </tr>
+        <tr>
+            <td><></td>
+            <td>Diferente</td>
+        </tr>
+    </table>
+
+    <h3>Estruturas de Decisão e Repetição:</h3>
+    <table>
+        <tr>
+            <th>Comando</th>
+            <th>Função</th>
+        </tr>
+        <tr>
+            <td>Se () Então ... Fimse</td>
+            <td>Executa uma ação caso a condição seja verdadeira</td>
+        </tr>
+        <tr>
+            <td>Repita ... Ate ()</td>
+            <td>Repete uma ação enquanto a condição for verdadeira (executa, depois valida)</td>
+        </tr>
+        <tr>
+            <td>Enquanto () Faça ... Fimenquanto</td>
+            <td>Repete uma ação enquanto a condição for verdadeira (valida, depois executa)</td>
+        </tr>
+    </table>
+
+    <aside>
+        <h4>Observação</h4>
+        <p>Pode-se colocar estruturas dentro de estruturas.</p>
+    </aside>
+
+</section>
+
+<section id="avaliacao">
+    <h2>4. Avaliação do Conteúdo</h2>
+
+    <form>
+        <fieldset>
+            <legend>Formulário de Avaliação</legend>
+
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome"><br><br>
+
+            <label>Você compreendeu o conteúdo?</label><br>
+            <input type="radio" name="compreensao"> Sim
+            <input type="radio" name="compreensao"> Parcialmente
+            <input type="radio" name="compreensao"> Não<br><br>
+
+            <label>Quais tópicos você considera mais importantes?</label><br>
+            <input type="checkbox"> Estrutura do Algoritmo
+            <input type="checkbox"> Variáveis
+            <input type="checkbox"> Comandos<br><br>
+
+            <label for="nivel">Nível de dificuldade:</label>
+            <select id="nivel">
+                <option>Fácil</option>
+                <option>Médio</option>
+                <option>Difícil</option>
+            </select><br><br>
+
+            <label for="comentario">Comentário:</label><br>
+            <textarea name="comentario" rows="5" cols="30"></textarea><br><br>
+
+            <input type="submit" value="Enviar Avaliação">
+            <input type="button" value="Limpar">
+            <button>Botão HTML</button>
+
+        </fieldset>
+    </form>
+</section>
+
+<footer>
+    <h5>Desenvolvido para a disciplina de Programação Front-End</h5>
+    <h6>Todos os direitos reservados</h6>
+</footer>
+
+</body>
+</html>
