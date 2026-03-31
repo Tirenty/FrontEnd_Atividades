@@ -3,8 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Bichinho PixelArt IA</title>
-
-    <!-- Tailwind + DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -12,17 +10,21 @@
 <body class="flex flex-col items-center justify-center min-h-screen bg-cover bg-center gap-6"
       style="background-image: url('Fundo.png');">
 
-    <!-- Bichinho (MAIOR) -->
     <img id="parado" src="Parado.png"
          class="w-64 transition-transform hover:scale-110"/>
 
-    <!-- Cookie embaixo -->
-    <button onclick="alimentar()" class="flex items-center justify-center">
+    <!-- Botão do Biscoito (com ID para controle) -->
+    <button id="btn-biscoito" onclick="alimentar()" class="flex items-center justify-center">
         <img id="comendo" src="Coockie.png"
              class="w-20 h-20 hover:scale-110 transition-transform"/>
     </button>
 
-    <script src="script.js"></script>
+    <!-- Novo Botão de Reviver (Inicia escondido com 'hidden') -->
+    <button id="btn-reviver" onclick="reviver()" 
+            class="hidden px-6 py-2 bg-red-600 text-white font-bold rounded-full hover:bg-red-700 transition-colors uppercase tracking-widest shadow-lg">
+        Reviver
+    </button>
 
+    <script src="script.js"></script>
 </body>
 </html>

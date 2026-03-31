@@ -29,6 +29,9 @@ function init_cont (){
 
             if(contador == 40){
                 bicho.src = estados.fome60;
+
+    		document.getElementById('btn-biscoito').classList.add('hidden');
+    		document.getElementById('btn-reviver').classList.remove('hidden');
             }
         }
     }, 1000);
@@ -50,7 +53,19 @@ function alimentar (){
                 }, 1000);
             }, 1000);
     }
+}
 
+function reviver() {
+
+    contador = 0;
+    bicho.src = estados.normal;
+
+    document.getElementById('btn-reviver').classList.add('hidden');
+    document.getElementById('btn-biscoito').classList.remove('hidden');
+
+    init_cont();
+
+    console.log("O bichinho reviveu!");
 }
 
 init_cont();
